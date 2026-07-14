@@ -30,12 +30,12 @@ flowchart LR
 
 | 레포 | 역할 | 관련 ADR |
 |---|---|---|
-| `ICONIA-HW` | ESP32 기기(인형) 펌웨어 — 절전·OTA·부팅 보안 | 0005 |
-| `ICONIA-SERVER` | 중앙 API · 단일 진실원천(SSOT) | 0002 · 0003 |
-| `ICONIA-AI` | 페르소나 · 멀티모달 RAG · 외부 LLM 게이트 | 0001 · 0007 |
-| `ICONIA-APP` | 사용자 모바일 앱 (React Native) | 0003 |
-| `ICONIA-ADMIN` | 운영자 콘솔 (Next.js) | 0003 |
-| `ICONIA-CI` | IaC · 무중단 배포 · 관측성 | 0004 · 0006 |
+| `ICONIA-HW` | ESP32 기기(인형) 펌웨어 — 절전·OTA·부팅 보안 | [0005](adr/0005-firmware-anti-rollback.md) |
+| `ICONIA-SERVER` | 중앙 API · 단일 진실원천(SSOT) | [0002](adr/0002-signed-rpc-and-ordering.md) · [0003](adr/0003-token-rotation-auth.md) |
+| `ICONIA-AI` | 페르소나 · 멀티모달 RAG · 외부 LLM 게이트 | [0001](adr/0001-external-llm-isolation.md) · [0007](adr/0007-multi-llm-routing-rag.md) |
+| `ICONIA-APP` | 사용자 모바일 앱 (React Native) | [0003](adr/0003-token-rotation-auth.md) |
+| `ICONIA-ADMIN` | 운영자 콘솔 (Next.js) | [0003](adr/0003-token-rotation-auth.md) |
+| `ICONIA-CI` | IaC · 무중단 배포 · 관측성 | [0004](adr/0004-zero-downtime-deploy.md) · [0006](adr/0006-observability-slo.md) |
 
 ---
 
